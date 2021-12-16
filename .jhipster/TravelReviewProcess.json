@@ -1,0 +1,83 @@
+{
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "travelOrigin",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "travelDestination",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "travelWithFlight",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "travelStartDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "travelEndDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "flightTicketNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "flightClass",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "flightDuration",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "flightPrice",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "accommodationBookingNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accommodationBookingPrice",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "attractionPrice",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "travelCost",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipName": "airlineCompany",
+      "otherEntityName": "airlineCompany",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "name"
+    }
+  ],
+  "entityType": "process-binding",
+  "processBpmnId": "TravelReviewProcess",
+  "domainEntityName": "TravelReview",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "TravelReviewProcess",
+  "changelogDate": "20210401000002",
+  "skipFakeData": true
+}

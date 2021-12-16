@@ -1,0 +1,39 @@
+{
+  "travelReviewApp": {
+    "travelReviewProcess": {
+      "home": {
+        "title": "Travel Review Processes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Travel Review Process",
+        "createOrEditLabel": "Create or edit a Travel Review Process",
+        "notFound": "No Travel Review Processes found"
+      },
+      "created": "A new Travel Review Process is created with identifier {{ param }}",
+      "updated": "A Travel Review Process is updated with identifier {{ param }}",
+      "deleted": "A Travel Review Process is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Travel Review Process {{ id }}?"
+      },
+      "detail": {
+        "title": "Travel Review Process"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "travelOrigin": "Travel Origin",
+      "travelDestination": "Travel Destination",
+      "travelWithFlight": "Travel With Flight",
+      "travelStartDate": "Travel Start Date",
+      "travelEndDate": "Travel End Date",
+      "flightTicketNumber": "Flight Ticket Number",
+      "flightClass": "Flight Class",
+      "flightDuration": "Flight Duration",
+      "flightPrice": "Flight Price",
+      "accommodationBookingNumber": "Accommodation Booking Number",
+      "accommodationBookingPrice": "Accommodation Booking Price",
+      "attractionPrice": "Attraction Price",
+      "travelCost": "Travel Cost",
+      "airlineCompany": "Airline Company"
+    }
+  }
+}

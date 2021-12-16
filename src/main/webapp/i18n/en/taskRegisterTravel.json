@@ -1,0 +1,30 @@
+{
+  "travelReviewApp": {
+    "taskRegisterTravel": {
+      "home": {
+        "title": "Task Register Travels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Register Travel",
+        "createOrEditLabel": "Create or edit a Task Register Travel",
+        "notFound": "No Task Register Travels found"
+      },
+      "created": "A new Task Register Travel is created with identifier {{ param }}",
+      "updated": "A Task Register Travel is updated with identifier {{ param }}",
+      "deleted": "A Task Register Travel is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Register Travel {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Register Travel"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "travelOrigin": "Travel Origin",
+      "travelDestination": "Travel Destination",
+      "travelWithFlight": "Travel With Flight",
+      "travelStartDate": "Travel Start Date",
+      "travelEndDate": "Travel End Date"
+    }
+  }
+}

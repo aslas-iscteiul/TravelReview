@@ -1,0 +1,31 @@
+{
+  "travelReviewApp": {
+    "travelReview": {
+      "home": {
+        "title": "Travel Reviews",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Travel Reviews found"
+      },
+      "detail": {
+        "title": "Travel Review"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "travelOrigin": "Travel Origin",
+      "travelDestination": "Travel Destination",
+      "travelWithFlight": "Travel With Flight",
+      "travelStartDate": "Travel Start Date",
+      "travelEndDate": "Travel End Date",
+      "flightTicketNumber": "Flight Ticket Number",
+      "flightClass": "Flight Class",
+      "flightDuration": "Flight Duration",
+      "flightPrice": "Flight Price",
+      "accommodationBookingNumber": "Accommodation Booking Number",
+      "accommodationBookingPrice": "Accommodation Booking Price",
+      "attractionPrice": "Attraction Price",
+      "travelCost": "Travel Cost",
+      "airlineCompany": "Airline Company"
+    }
+  }
+}
