@@ -33,11 +33,17 @@ public class TravelReviewDTO implements Serializable {
 
     private Double flightPrice;
 
+    private String flightReview;
+
     private String accommodationBookingNumber;
 
     private Double accommodationBookingPrice;
 
+    private String accommodationBookingReview;
+
     private Double attractionPrice;
+
+    private String attractionReview;
 
     private Double travelCost;
 
@@ -139,6 +145,14 @@ public class TravelReviewDTO implements Serializable {
         this.flightPrice = flightPrice;
     }
 
+    public String getFlightReview() {
+        return flightReview;
+    }
+
+    public void setFlightReview(String flightReview) {
+        this.flightReview = flightReview;
+    }
+
     public String getAccommodationBookingNumber() {
         return accommodationBookingNumber;
     }
@@ -155,12 +169,28 @@ public class TravelReviewDTO implements Serializable {
         this.accommodationBookingPrice = accommodationBookingPrice;
     }
 
+    public String getAccommodationBookingReview() {
+        return accommodationBookingReview;
+    }
+
+    public void setAccommodationBookingReview(String accommodationBookingReview) {
+        this.accommodationBookingReview = accommodationBookingReview;
+    }
+
     public Double getAttractionPrice() {
         return attractionPrice;
     }
 
     public void setAttractionPrice(Double attractionPrice) {
         this.attractionPrice = attractionPrice;
+    }
+
+    public String getAttractionReview() {
+        return attractionReview;
+    }
+
+    public void setAttractionReview(String attractionReview) {
+        this.attractionReview = attractionReview;
     }
 
     public Double getTravelCost() {
@@ -216,9 +246,12 @@ public class TravelReviewDTO implements Serializable {
             ", flightClass='" + getFlightClass() + "'" +
             ", flightDuration=" + getFlightDuration() +
             ", flightPrice=" + getFlightPrice() +
+            ", flightReview='" + getFlightReview() + "'" +
             ", accommodationBookingNumber='" + getAccommodationBookingNumber() + "'" +
             ", accommodationBookingPrice=" + getAccommodationBookingPrice() +
+            ", accommodationBookingReview='" + getAccommodationBookingReview() + "'" +
             ", attractionPrice=" + getAttractionPrice() +
+            ", attractionReview='" + getAttractionReview() + "'" +
             ", travelCost=" + getTravelCost() +
             ", airlineCompany=" + getAirlineCompany() +
             "}";

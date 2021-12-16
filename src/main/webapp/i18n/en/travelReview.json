@@ -21,9 +21,12 @@
       "flightClass": "Flight Class",
       "flightDuration": "Flight Duration",
       "flightPrice": "Flight Price",
+      "flightReview": "Flight Review",
       "accommodationBookingNumber": "Accommodation Booking Number",
       "accommodationBookingPrice": "Accommodation Booking Price",
+      "accommodationBookingReview": "Accommodation Booking Review",
       "attractionPrice": "Attraction Price",
+      "attractionReview": "Attraction Review",
       "travelCost": "Travel Cost",
       "airlineCompany": "Airline Company"
     }

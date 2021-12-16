@@ -45,6 +45,10 @@
       "fieldType": "Double"
     },
     {
+      "fieldName": "flightReview",
+      "fieldType": "String"
+    },
+    {
       "fieldName": "accommodationBookingNumber",
       "fieldType": "String"
     },
@@ -53,20 +57,20 @@
       "fieldType": "Double"
     },
     {
+      "fieldName": "accommodationBookingReview",
+      "fieldType": "String"
+    },
+    {
       "fieldName": "attractionPrice",
       "fieldType": "Double"
     },
     {
+      "fieldName": "attractionReview",
+      "fieldType": "String"
+    },
+    {
       "fieldName": "travelCost",
       "fieldType": "Double"
-    }
-  ],
-  "relationships": [
-    {
-      "relationshipName": "airlineCompany",
-      "otherEntityName": "airlineCompany",
-      "relationshipType": "many-to-one",
-      "otherEntityField": "name"
     }
   ],
   "entityType": "process-binding",
@@ -79,5 +83,6 @@
   "pagination": "no",
   "name": "TravelReviewProcess",
   "changelogDate": "20210401000002",
-  "skipFakeData": true
+  "skipFakeData": true,
+  "relationships": []
 }

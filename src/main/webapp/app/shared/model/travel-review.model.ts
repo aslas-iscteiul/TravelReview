@@ -13,9 +13,12 @@ export interface ITravelReview {
   flightClass?: string | null;
   flightDuration?: number | null;
   flightPrice?: number | null;
+  flightReview?: string | null;
   accommodationBookingNumber?: string | null;
   accommodationBookingPrice?: number | null;
+  accommodationBookingReview?: string | null;
   attractionPrice?: number | null;
+  attractionReview?: string | null;
   travelCost?: number | null;
   airlineCompany?: IAirlineCompany | null;
 }
@@ -34,9 +37,12 @@ export class TravelReview implements ITravelReview {
     public flightClass?: string | null,
     public flightDuration?: number | null,
     public flightPrice?: number | null,
+    public flightReview?: string | null,
     public accommodationBookingNumber?: string | null,
     public accommodationBookingPrice?: number | null,
+    public accommodationBookingReview?: string | null,
     public attractionPrice?: number | null,
+    public attractionReview?: string | null,
     public travelCost?: number | null,
     public airlineCompany?: IAirlineCompany | null
   ) {

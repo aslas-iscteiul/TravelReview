@@ -73,6 +73,12 @@
             <span>{{ travelReview.flightPrice }}</span>
           </dd>
           <dt>
+            <span v-text="$t('travelReviewApp.travelReview.flightReview')">Flight Review</span>
+          </dt>
+          <dd>
+            <span>{{ travelReview.flightReview }}</span>
+          </dd>
+          <dt>
             <span v-text="$t('travelReviewApp.travelReview.accommodationBookingNumber')">Accommodation Booking Number</span>
           </dt>
           <dd>
@@ -85,10 +91,22 @@
             <span>{{ travelReview.accommodationBookingPrice }}</span>
           </dd>
           <dt>
+            <span v-text="$t('travelReviewApp.travelReview.accommodationBookingReview')">Accommodation Booking Review</span>
+          </dt>
+          <dd>
+            <span>{{ travelReview.accommodationBookingReview }}</span>
+          </dd>
+          <dt>
             <span v-text="$t('travelReviewApp.travelReview.attractionPrice')">Attraction Price</span>
           </dt>
           <dd>
             <span>{{ travelReview.attractionPrice }}</span>
+          </dd>
+          <dt>
+            <span v-text="$t('travelReviewApp.travelReview.attractionReview')">Attraction Review</span>
+          </dt>
+          <dd>
+            <span>{{ travelReview.attractionReview }}</span>
           </dd>
           <dt>
             <span v-text="$t('travelReviewApp.travelReview.travelCost')">Travel Cost</span>

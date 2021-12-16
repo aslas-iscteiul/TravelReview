@@ -54,14 +54,23 @@ public class TravelReview implements Serializable {
     @Column(name = "flight_price")
     private Double flightPrice;
 
+    @Column(name = "flight_review")
+    private String flightReview;
+
     @Column(name = "accommodation_booking_number")
     private String accommodationBookingNumber;
 
     @Column(name = "accommodation_booking_price")
     private Double accommodationBookingPrice;
 
+    @Column(name = "accommodation_booking_review")
+    private String accommodationBookingReview;
+
     @Column(name = "attraction_price")
     private Double attractionPrice;
+
+    @Column(name = "attraction_review")
+    private String attractionReview;
 
     @Column(name = "travel_cost")
     private Double travelCost;
@@ -226,6 +235,19 @@ public class TravelReview implements Serializable {
         this.flightPrice = flightPrice;
     }
 
+    public String getFlightReview() {
+        return this.flightReview;
+    }
+
+    public TravelReview flightReview(String flightReview) {
+        this.flightReview = flightReview;
+        return this;
+    }
+
+    public void setFlightReview(String flightReview) {
+        this.flightReview = flightReview;
+    }
+
     public String getAccommodationBookingNumber() {
         return this.accommodationBookingNumber;
     }
@@ -252,6 +274,19 @@ public class TravelReview implements Serializable {
         this.accommodationBookingPrice = accommodationBookingPrice;
     }
 
+    public String getAccommodationBookingReview() {
+        return this.accommodationBookingReview;
+    }
+
+    public TravelReview accommodationBookingReview(String accommodationBookingReview) {
+        this.accommodationBookingReview = accommodationBookingReview;
+        return this;
+    }
+
+    public void setAccommodationBookingReview(String accommodationBookingReview) {
+        this.accommodationBookingReview = accommodationBookingReview;
+    }
+
     public Double getAttractionPrice() {
         return this.attractionPrice;
     }
@@ -263,6 +298,19 @@ public class TravelReview implements Serializable {
 
     public void setAttractionPrice(Double attractionPrice) {
         this.attractionPrice = attractionPrice;
+    }
+
+    public String getAttractionReview() {
+        return this.attractionReview;
+    }
+
+    public TravelReview attractionReview(String attractionReview) {
+        this.attractionReview = attractionReview;
+        return this;
+    }
+
+    public void setAttractionReview(String attractionReview) {
+        this.attractionReview = attractionReview;
     }
 
     public Double getTravelCost() {
@@ -326,9 +374,12 @@ public class TravelReview implements Serializable {
             ", flightClass='" + getFlightClass() + "'" +
             ", flightDuration=" + getFlightDuration() +
             ", flightPrice=" + getFlightPrice() +
+            ", flightReview='" + getFlightReview() + "'" +
             ", accommodationBookingNumber='" + getAccommodationBookingNumber() + "'" +
             ", accommodationBookingPrice=" + getAccommodationBookingPrice() +
+            ", accommodationBookingReview='" + getAccommodationBookingReview() + "'" +
             ", attractionPrice=" + getAttractionPrice() +
+            ", attractionReview='" + getAttractionReview() + "'" +
             ", travelCost=" + getTravelCost() +
             "}";
     }

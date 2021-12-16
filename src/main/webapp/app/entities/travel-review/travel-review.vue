@@ -29,13 +29,18 @@
             <th scope="row"><span v-text="$t('travelReviewApp.travelReview.flightClass')">Flight Class</span></th>
             <th scope="row"><span v-text="$t('travelReviewApp.travelReview.flightDuration')">Flight Duration</span></th>
             <th scope="row"><span v-text="$t('travelReviewApp.travelReview.flightPrice')">Flight Price</span></th>
+            <th scope="row"><span v-text="$t('travelReviewApp.travelReview.flightReview')">Flight Review</span></th>
             <th scope="row">
               <span v-text="$t('travelReviewApp.travelReview.accommodationBookingNumber')">Accommodation Booking Number</span>
             </th>
             <th scope="row">
               <span v-text="$t('travelReviewApp.travelReview.accommodationBookingPrice')">Accommodation Booking Price</span>
             </th>
+            <th scope="row">
+              <span v-text="$t('travelReviewApp.travelReview.accommodationBookingReview')">Accommodation Booking Review</span>
+            </th>
             <th scope="row"><span v-text="$t('travelReviewApp.travelReview.attractionPrice')">Attraction Price</span></th>
+            <th scope="row"><span v-text="$t('travelReviewApp.travelReview.attractionReview')">Attraction Review</span></th>
             <th scope="row"><span v-text="$t('travelReviewApp.travelReview.travelCost')">Travel Cost</span></th>
             <th scope="row"><span v-text="$t('travelReviewApp.travelReview.airlineCompany')">Airline Company</span></th>
             <th scope="row"></th>
@@ -59,9 +64,12 @@
             <td>{{ travelReview.flightClass }}</td>
             <td>{{ travelReview.flightDuration }}</td>
             <td>{{ travelReview.flightPrice }}</td>
+            <td>{{ travelReview.flightReview }}</td>
             <td>{{ travelReview.accommodationBookingNumber }}</td>
             <td>{{ travelReview.accommodationBookingPrice }}</td>
+            <td>{{ travelReview.accommodationBookingReview }}</td>
             <td>{{ travelReview.attractionPrice }}</td>
+            <td>{{ travelReview.attractionReview }}</td>
             <td>{{ travelReview.travelCost }}</td>
             <td>
               <div v-if="travelReview.airlineCompany">

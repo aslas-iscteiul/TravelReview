@@ -178,6 +178,20 @@
               </div>
               <div class="card-body py-0">
                 <div class="form-group">
+                  <label class="form-control-label" v-text="$t('travelReviewApp.travelReviewProcess.flightReview')">flightReview</label>
+                  <input
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="flightReview"
+                    id="travel-review-flightReview"
+                    data-cy="flightReview"
+                    v-model="travelReviewProcess.travelReview.flightReview"
+                  />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
                   <label class="form-control-label" v-text="$t('travelReviewApp.travelReviewProcess.accommodationBookingNumber')"
                     >accommodationBookingNumber</label
                   >
@@ -210,6 +224,22 @@
               </div>
               <div class="card-body py-0">
                 <div class="form-group">
+                  <label class="form-control-label" v-text="$t('travelReviewApp.travelReviewProcess.accommodationBookingReview')"
+                    >accommodationBookingReview</label
+                  >
+                  <input
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="accommodationBookingReview"
+                    id="travel-review-accommodationBookingReview"
+                    data-cy="accommodationBookingReview"
+                    v-model="travelReviewProcess.travelReview.accommodationBookingReview"
+                  />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
                   <label class="form-control-label" v-text="$t('travelReviewApp.travelReviewProcess.attractionPrice')"
                     >attractionPrice</label
                   >
@@ -226,6 +256,22 @@
               </div>
               <div class="card-body py-0">
                 <div class="form-group">
+                  <label class="form-control-label" v-text="$t('travelReviewApp.travelReviewProcess.attractionReview')"
+                    >attractionReview</label
+                  >
+                  <input
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="attractionReview"
+                    id="travel-review-attractionReview"
+                    data-cy="attractionReview"
+                    v-model="travelReviewProcess.travelReview.attractionReview"
+                  />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
                   <label class="form-control-label" v-text="$t('travelReviewApp.travelReviewProcess.travelCost')">travelCost</label>
                   <input
                     readonly
@@ -235,36 +281,6 @@
                     id="travel-review-travelCost"
                     data-cy="travelCost"
                     v-model="travelReviewProcess.travelReview.travelCost"
-                  />
-                </div>
-              </div>
-              <div class="card-body py-0">
-                <div class="form-group">
-                  <label
-                    class="form-control-label"
-                    v-text="$t('travelReviewApp.travelReviewProcess.airlineCompany')"
-                    for="travel-review-process-airlineCompany"
-                    >Airline Company</label
-                  >
-                  <input
-                    v-if="travelReviewProcess.travelReview.airlineCompany"
-                    readonly
-                    type="text"
-                    class="form-control"
-                    name="airlineCompany"
-                    id="travel-review-airlineCompany"
-                    data-cy="airlineCompany"
-                    :value="travelReviewProcess.travelReview.airlineCompany.name"
-                  />
-                  <input
-                    v-else
-                    readonly
-                    type="text"
-                    class="form-control"
-                    name="airlineCompany"
-                    id="travel-review-airlineCompany"
-                    data-cy="airlineCompany"
-                    value=""
                   />
                 </div>
               </div>

@@ -47,8 +47,11 @@ describe('Service Tests', () => {
         0,
         0,
         'AAAAAAA',
+        'AAAAAAA',
         0,
+        'AAAAAAA',
         0,
+        'AAAAAAA',
         0
       );
     });
@@ -93,9 +96,12 @@ describe('Service Tests', () => {
             flightClass: 'BBBBBB',
             flightDuration: 1,
             flightPrice: 1,
+            flightReview: 'BBBBBB',
             accommodationBookingNumber: 'BBBBBB',
             accommodationBookingPrice: 1,
+            accommodationBookingReview: 'BBBBBB',
             attractionPrice: 1,
+            attractionReview: 'BBBBBB',
             travelCost: 1,
           },
           elemDefault

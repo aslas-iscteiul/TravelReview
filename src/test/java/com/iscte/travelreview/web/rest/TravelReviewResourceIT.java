@@ -66,14 +66,23 @@ class TravelReviewResourceIT {
     private static final Double DEFAULT_FLIGHT_PRICE = 1D;
     private static final Double UPDATED_FLIGHT_PRICE = 2D;
 
+    private static final String DEFAULT_FLIGHT_REVIEW = "AAAAAAAAAA";
+    private static final String UPDATED_FLIGHT_REVIEW = "BBBBBBBBBB";
+
     private static final String DEFAULT_ACCOMMODATION_BOOKING_NUMBER = "AAAAAAAAAA";
     private static final String UPDATED_ACCOMMODATION_BOOKING_NUMBER = "BBBBBBBBBB";
 
     private static final Double DEFAULT_ACCOMMODATION_BOOKING_PRICE = 1D;
     private static final Double UPDATED_ACCOMMODATION_BOOKING_PRICE = 2D;
 
+    private static final String DEFAULT_ACCOMMODATION_BOOKING_REVIEW = "AAAAAAAAAA";
+    private static final String UPDATED_ACCOMMODATION_BOOKING_REVIEW = "BBBBBBBBBB";
+
     private static final Double DEFAULT_ATTRACTION_PRICE = 1D;
     private static final Double UPDATED_ATTRACTION_PRICE = 2D;
+
+    private static final String DEFAULT_ATTRACTION_REVIEW = "AAAAAAAAAA";
+    private static final String UPDATED_ATTRACTION_REVIEW = "BBBBBBBBBB";
 
     private static final Double DEFAULT_TRAVEL_COST = 1D;
     private static final Double UPDATED_TRAVEL_COST = 2D;
@@ -117,9 +126,12 @@ class TravelReviewResourceIT {
             .flightClass(DEFAULT_FLIGHT_CLASS)
             .flightDuration(DEFAULT_FLIGHT_DURATION)
             .flightPrice(DEFAULT_FLIGHT_PRICE)
+            .flightReview(DEFAULT_FLIGHT_REVIEW)
             .accommodationBookingNumber(DEFAULT_ACCOMMODATION_BOOKING_NUMBER)
             .accommodationBookingPrice(DEFAULT_ACCOMMODATION_BOOKING_PRICE)
+            .accommodationBookingReview(DEFAULT_ACCOMMODATION_BOOKING_REVIEW)
             .attractionPrice(DEFAULT_ATTRACTION_PRICE)
+            .attractionReview(DEFAULT_ATTRACTION_REVIEW)
             .travelCost(DEFAULT_TRAVEL_COST);
         return travelReview;
     }
@@ -143,9 +155,12 @@ class TravelReviewResourceIT {
             .flightClass(UPDATED_FLIGHT_CLASS)
             .flightDuration(UPDATED_FLIGHT_DURATION)
             .flightPrice(UPDATED_FLIGHT_PRICE)
+            .flightReview(UPDATED_FLIGHT_REVIEW)
             .accommodationBookingNumber(UPDATED_ACCOMMODATION_BOOKING_NUMBER)
             .accommodationBookingPrice(UPDATED_ACCOMMODATION_BOOKING_PRICE)
+            .accommodationBookingReview(UPDATED_ACCOMMODATION_BOOKING_REVIEW)
             .attractionPrice(UPDATED_ATTRACTION_PRICE)
+            .attractionReview(UPDATED_ATTRACTION_REVIEW)
             .travelCost(UPDATED_TRAVEL_COST);
         return travelReview;
     }
@@ -178,9 +193,12 @@ class TravelReviewResourceIT {
             .andExpect(jsonPath("$.[*].flightClass").value(hasItem(DEFAULT_FLIGHT_CLASS)))
             .andExpect(jsonPath("$.[*].flightDuration").value(hasItem(DEFAULT_FLIGHT_DURATION.doubleValue())))
             .andExpect(jsonPath("$.[*].flightPrice").value(hasItem(DEFAULT_FLIGHT_PRICE.doubleValue())))
+            .andExpect(jsonPath("$.[*].flightReview").value(hasItem(DEFAULT_FLIGHT_REVIEW)))
             .andExpect(jsonPath("$.[*].accommodationBookingNumber").value(hasItem(DEFAULT_ACCOMMODATION_BOOKING_NUMBER)))
             .andExpect(jsonPath("$.[*].accommodationBookingPrice").value(hasItem(DEFAULT_ACCOMMODATION_BOOKING_PRICE.doubleValue())))
+            .andExpect(jsonPath("$.[*].accommodationBookingReview").value(hasItem(DEFAULT_ACCOMMODATION_BOOKING_REVIEW)))
             .andExpect(jsonPath("$.[*].attractionPrice").value(hasItem(DEFAULT_ATTRACTION_PRICE.doubleValue())))
+            .andExpect(jsonPath("$.[*].attractionReview").value(hasItem(DEFAULT_ATTRACTION_REVIEW)))
             .andExpect(jsonPath("$.[*].travelCost").value(hasItem(DEFAULT_TRAVEL_COST.doubleValue())));
     }
 
@@ -207,9 +225,12 @@ class TravelReviewResourceIT {
             .andExpect(jsonPath("$.flightClass").value(DEFAULT_FLIGHT_CLASS))
             .andExpect(jsonPath("$.flightDuration").value(DEFAULT_FLIGHT_DURATION.doubleValue()))
             .andExpect(jsonPath("$.flightPrice").value(DEFAULT_FLIGHT_PRICE.doubleValue()))
+            .andExpect(jsonPath("$.flightReview").value(DEFAULT_FLIGHT_REVIEW))
             .andExpect(jsonPath("$.accommodationBookingNumber").value(DEFAULT_ACCOMMODATION_BOOKING_NUMBER))
             .andExpect(jsonPath("$.accommodationBookingPrice").value(DEFAULT_ACCOMMODATION_BOOKING_PRICE.doubleValue()))
+            .andExpect(jsonPath("$.accommodationBookingReview").value(DEFAULT_ACCOMMODATION_BOOKING_REVIEW))
             .andExpect(jsonPath("$.attractionPrice").value(DEFAULT_ATTRACTION_PRICE.doubleValue()))
+            .andExpect(jsonPath("$.attractionReview").value(DEFAULT_ATTRACTION_REVIEW))
             .andExpect(jsonPath("$.travelCost").value(DEFAULT_TRAVEL_COST.doubleValue()));
     }
 

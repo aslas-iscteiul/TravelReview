@@ -47,13 +47,22 @@
             <column name="flight_price" type="double">
                 <constraints nullable="true" />
             </column>
+            <column name="flight_review" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
             <column name="accommodation_booking_number" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
             <column name="accommodation_booking_price" type="double">
                 <constraints nullable="true" />
             </column>
+            <column name="accommodation_booking_review" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
             <column name="attraction_price" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="attraction_review" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
             <column name="travel_cost" type="double">

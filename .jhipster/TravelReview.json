@@ -45,6 +45,10 @@
       "fieldType": "Double"
     },
     {
+      "fieldName": "flightReview",
+      "fieldType": "String"
+    },
+    {
       "fieldName": "accommodationBookingNumber",
       "fieldType": "String"
     },
@@ -53,8 +57,16 @@
       "fieldType": "Double"
     },
     {
+      "fieldName": "accommodationBookingReview",
+      "fieldType": "String"
+    },
+    {
       "fieldName": "attractionPrice",
       "fieldType": "Double"
+    },
+    {
+      "fieldName": "attractionReview",
+      "fieldType": "String"
     },
     {
       "fieldName": "travelCost",
