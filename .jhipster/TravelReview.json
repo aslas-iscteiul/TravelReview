@@ -85,6 +85,12 @@
       "otherEntityName": "accommodation",
       "relationshipType": "many-to-one",
       "otherEntityField": "name"
+    },
+    {
+      "relationshipName": "flightScore",
+      "otherEntityName": "score",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "description"
     }
   ],
   "entityType": "domain",

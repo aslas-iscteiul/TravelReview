@@ -52,6 +52,7 @@ public class CacheConfiguration {
             createCache(cm, com.iscte.travelreview.domain.TravelReviewProcess.class.getName());
             createCache(cm, com.iscte.travelreview.domain.AirlineCompany.class.getName());
             createCache(cm, com.iscte.travelreview.domain.Accommodation.class.getName());
+            createCache(cm, com.iscte.travelreview.domain.Score.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

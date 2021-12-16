@@ -1,0 +1,30 @@
+{
+  "travelReviewApp": {
+    "taskEvaluateFlight": {
+      "home": {
+        "title": "Task Evaluate Flights",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Evaluate Flight",
+        "createOrEditLabel": "Create or edit a Task Evaluate Flight",
+        "notFound": "No Task Evaluate Flights found"
+      },
+      "created": "A new Task Evaluate Flight is created with identifier {{ param }}",
+      "updated": "A Task Evaluate Flight is updated with identifier {{ param }}",
+      "deleted": "A Task Evaluate Flight is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Evaluate Flight {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Evaluate Flight"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "travelOrigin": "Travel Origin",
+      "travelDestination": "Travel Destination",
+      "flightTicketNumber": "Flight Ticket Number",
+      "flightReview": "Flight Review",
+      "flightScore": "Flight Score"
+    }
+  }
+}

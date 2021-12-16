@@ -53,6 +53,6 @@
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
     "languages": ["en"],
-    "entities": ["TravelReview", "AirlineCompany", "Accommodation"]
+    "entities": ["TravelReview", "AirlineCompany", "Accommodation", "Score"]
   }
 }

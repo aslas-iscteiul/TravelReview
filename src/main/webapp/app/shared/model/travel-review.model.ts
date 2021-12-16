@@ -1,5 +1,6 @@
 import { IAirlineCompany } from '@/shared/model/airline-company.model';
 import { IAccommodation } from '@/shared/model/accommodation.model';
+import { IScore } from '@/shared/model/score.model';
 
 export interface ITravelReview {
   id?: number;
@@ -23,6 +24,7 @@ export interface ITravelReview {
   travelCost?: number | null;
   airlineCompany?: IAirlineCompany | null;
   accommodation?: IAccommodation | null;
+  flightScore?: IScore | null;
 }
 
 export class TravelReview implements ITravelReview {
@@ -47,7 +49,8 @@ export class TravelReview implements ITravelReview {
     public attractionReview?: string | null,
     public travelCost?: number | null,
     public airlineCompany?: IAirlineCompany | null,
-    public accommodation?: IAccommodation | null
+    public accommodation?: IAccommodation | null,
+    public flightScore?: IScore | null
   ) {
     this.travelWithFlight = this.travelWithFlight ?? false;
   }

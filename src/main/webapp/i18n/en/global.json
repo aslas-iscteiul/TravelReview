@@ -21,6 +21,8 @@
         "accommodation": "Accommodation",
         "taskCorrectTravelDates": "Task Correct Travel Dates",
         "taskRegisterBookingData": "Task Register Booking Data",
+        "taskEvaluateFlight": "Task Evaluate Flight",
+        "score": "Score",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

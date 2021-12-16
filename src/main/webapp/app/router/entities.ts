@@ -40,6 +40,16 @@ const TravelReviewProcess_TaskCorrectTravelDatesExecute = () => import('@/entiti
 const TravelReviewProcess_TaskRegisterBookingDataDetails = () => import('@/entities/travel-review-process/task-register-booking-data/task-register-booking-data-details.vue');
 // prettier-ignore
 const TravelReviewProcess_TaskRegisterBookingDataExecute = () => import('@/entities/travel-review-process/task-register-booking-data/task-register-booking-data-execute.vue');
+// prettier-ignore
+const TravelReviewProcess_TaskEvaluateFlightDetails = () => import('@/entities/travel-review-process/task-evaluate-flight/task-evaluate-flight-details.vue');
+// prettier-ignore
+const TravelReviewProcess_TaskEvaluateFlightExecute = () => import('@/entities/travel-review-process/task-evaluate-flight/task-evaluate-flight-execute.vue');
+// prettier-ignore
+const Score = () => import('@/entities/score/score.vue');
+// prettier-ignore
+const ScoreUpdate = () => import('@/entities/score/score-update.vue');
+// prettier-ignore
+const ScoreDetails = () => import('@/entities/score/score-details.vue');
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 export default [
@@ -167,6 +177,42 @@ export default [
     path: '/process-definition/TravelReviewProcess/task/RegisterBookingData/:taskInstanceId/execute',
     name: 'TravelReviewProcess_TaskRegisterBookingDataExecute',
     component: TravelReviewProcess_TaskRegisterBookingDataExecute,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/process-definition/TravelReviewProcess/task/EvaluateFlight/:taskInstanceId/view',
+    name: 'TravelReviewProcess_TaskEvaluateFlightDetails',
+    component: TravelReviewProcess_TaskEvaluateFlightDetails,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/process-definition/TravelReviewProcess/task/EvaluateFlight/:taskInstanceId/execute',
+    name: 'TravelReviewProcess_TaskEvaluateFlightExecute',
+    component: TravelReviewProcess_TaskEvaluateFlightExecute,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/score',
+    name: 'Score',
+    component: Score,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/score/new',
+    name: 'ScoreCreate',
+    component: ScoreUpdate,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/score/:scoreId/edit',
+    name: 'ScoreEdit',
+    component: ScoreUpdate,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/score/:scoreId/view',
+    name: 'ScoreView',
+    component: ScoreDetails,
     meta: { authorities: [Authority.USER] },
   },
   // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here

@@ -1,0 +1,54 @@
+{
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "travelOrigin",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "travelDestination",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "flightTicketNumber",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "flightReview",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipName": "flightScore",
+      "otherEntityName": "score",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "description"
+    }
+  ],
+  "entityType": "user-task-form",
+  "processBpmnId": "TravelReviewProcess",
+  "processEntityName": "TravelReviewProcess",
+  "taskBpmnId": "EvaluateFlight",
+  "domainEntityName": "TravelReview",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "TaskEvaluateFlight",
+  "changelogDate": "20210401884444"
+}
