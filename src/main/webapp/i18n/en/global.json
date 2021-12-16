@@ -19,6 +19,7 @@
         "taskRegisterFlightData": "Task Register Flight Data",
         "airlineCompany": "Airline Company",
         "accommodation": "Accommodation",
+        "taskCorrectTravelDates": "Task Correct Travel Dates",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

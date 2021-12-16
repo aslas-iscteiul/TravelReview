@@ -1,0 +1,29 @@
+{
+  "travelReviewApp": {
+    "taskCorrectTravelDates": {
+      "home": {
+        "title": "Task Correct Travel Dates",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Correct Travel Dates",
+        "createOrEditLabel": "Create or edit a Task Correct Travel Dates",
+        "notFound": "No Task Correct Travel Dates found"
+      },
+      "created": "A new Task Correct Travel Dates is created with identifier {{ param }}",
+      "updated": "A Task Correct Travel Dates is updated with identifier {{ param }}",
+      "deleted": "A Task Correct Travel Dates is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Correct Travel Dates {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Correct Travel Dates"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "travelOrigin": "Travel Origin",
+      "travelDestination": "Travel Destination",
+      "travelStartDate": "Travel Start Date",
+      "travelEndDate": "Travel End Date"
+    }
+  }
+}
