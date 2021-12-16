@@ -1,0 +1,30 @@
+{
+  "travelReviewApp": {
+    "taskRegisterBookingData": {
+      "home": {
+        "title": "Task Register Booking Data",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Register Booking Data",
+        "createOrEditLabel": "Create or edit a Task Register Booking Data",
+        "notFound": "No Task Register Booking Data found"
+      },
+      "created": "A new Task Register Booking Data is created with identifier {{ param }}",
+      "updated": "A Task Register Booking Data is updated with identifier {{ param }}",
+      "deleted": "A Task Register Booking Data is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Register Booking Data {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Register Booking Data"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "travelOrigin": "Travel Origin",
+      "travelDestination": "Travel Destination",
+      "accommodationBookingNumber": "Accommodation Booking Number",
+      "accommodationBookingPrice": "Accommodation Booking Price",
+      "accommodation": "Accommodation"
+    }
+  }
+}

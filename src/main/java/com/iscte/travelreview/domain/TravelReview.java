@@ -78,6 +78,9 @@ public class TravelReview implements Serializable {
     @ManyToOne
     private AirlineCompany airlineCompany;
 
+    @ManyToOne
+    private Accommodation accommodation;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
         return id;
@@ -337,6 +340,19 @@ public class TravelReview implements Serializable {
 
     public void setAirlineCompany(AirlineCompany airlineCompany) {
         this.airlineCompany = airlineCompany;
+    }
+
+    public Accommodation getAccommodation() {
+        return this.accommodation;
+    }
+
+    public TravelReview accommodation(Accommodation accommodation) {
+        this.setAccommodation(accommodation);
+        return this;
+    }
+
+    public void setAccommodation(Accommodation accommodation) {
+        this.accommodation = accommodation;
     }
 
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here

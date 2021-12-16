@@ -79,6 +79,12 @@
       "otherEntityName": "airlineCompany",
       "relationshipType": "many-to-one",
       "otherEntityField": "name"
+    },
+    {
+      "relationshipName": "accommodation",
+      "otherEntityName": "accommodation",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "name"
     }
   ],
   "entityType": "domain",

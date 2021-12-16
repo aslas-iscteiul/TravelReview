@@ -49,6 +49,8 @@ public class TravelReviewDTO implements Serializable {
 
     private AirlineCompanyDTO airlineCompany;
 
+    private AccommodationDTO accommodation;
+
     public Long getId() {
         return id;
     }
@@ -209,6 +211,14 @@ public class TravelReviewDTO implements Serializable {
         this.airlineCompany = airlineCompany;
     }
 
+    public AccommodationDTO getAccommodation() {
+        return accommodation;
+    }
+
+    public void setAccommodation(AccommodationDTO accommodation) {
+        this.accommodation = accommodation;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -254,6 +264,7 @@ public class TravelReviewDTO implements Serializable {
             ", attractionReview='" + getAttractionReview() + "'" +
             ", travelCost=" + getTravelCost() +
             ", airlineCompany=" + getAirlineCompany() +
+            ", accommodation=" + getAccommodation() +
             "}";
     }
 }

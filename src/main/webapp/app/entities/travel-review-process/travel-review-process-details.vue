@@ -284,6 +284,66 @@
                   />
                 </div>
               </div>
+              <div class="card-body py-0">
+                <div class="form-group">
+                  <label
+                    class="form-control-label"
+                    v-text="$t('travelReviewApp.travelReviewProcess.airlineCompany')"
+                    for="travel-review-process-airlineCompany"
+                    >Airline Company</label
+                  >
+                  <input
+                    v-if="travelReviewProcess.travelReview.airlineCompany"
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="airlineCompany"
+                    id="travel-review-airlineCompany"
+                    data-cy="airlineCompany"
+                    :value="travelReviewProcess.travelReview.airlineCompany.name"
+                  />
+                  <input
+                    v-else
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="airlineCompany"
+                    id="travel-review-airlineCompany"
+                    data-cy="airlineCompany"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
+                  <label
+                    class="form-control-label"
+                    v-text="$t('travelReviewApp.travelReviewProcess.accommodation')"
+                    for="travel-review-process-accommodation"
+                    >Accommodation</label
+                  >
+                  <input
+                    v-if="travelReviewProcess.travelReview.accommodation"
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="accommodation"
+                    id="travel-review-accommodation"
+                    data-cy="accommodation"
+                    :value="travelReviewProcess.travelReview.accommodation.name"
+                  />
+                  <input
+                    v-else
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="accommodation"
+                    id="travel-review-accommodation"
+                    data-cy="accommodation"
+                    value=""
+                  />
+                </div>
+              </div>
             </div>
           </template>
         </akip-show-process-instance>

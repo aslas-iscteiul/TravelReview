@@ -35,7 +35,9 @@
       "accommodationBookingReview": "Accommodation Booking Review",
       "attractionPrice": "Attraction Price",
       "attractionReview": "Attraction Review",
-      "travelCost": "Travel Cost"
+      "travelCost": "Travel Cost",
+      "airlineCompany": "Airline Company",
+      "accommodation": "Accommodation"
     }
   }
 }

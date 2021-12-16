@@ -23,10 +23,12 @@
     <include file="config/liquibase/changelog/20211109000001_added_entity_AirlineCompany.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20211109000002_added_entity_Accommodation.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210401000234_added_entity_TaskCorrectTravelDates.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210401010234_added_entity_TaskRegisterBookingData.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20210401000001_added_entity_constraints_TravelReview.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210401000002_added_entity_constraints_TravelReviewProcess.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210401000444_added_entity_constraints_TaskRegisterFlightData.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210401010234_added_entity_constraints_TaskRegisterBookingData.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

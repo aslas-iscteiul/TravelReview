@@ -13,5 +13,11 @@
                                  constraintName="fk_travel_review__airline_company_id"
                                  referencedColumnNames="id"
                                  referencedTableName="airline_company"/>
+
+        <addForeignKeyConstraint baseColumnNames="accommodation_id"
+                                 baseTableName="travel_review"
+                                 constraintName="fk_travel_review__accommodation_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="accommodation"/>
     </changeSet>
 </databaseChangeLog>

@@ -73,6 +73,20 @@
       "fieldType": "Double"
     }
   ],
+  "relationships": [
+    {
+      "relationshipName": "airlineCompany",
+      "otherEntityName": "airlineCompany",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipName": "accommodation",
+      "otherEntityName": "accommodation",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "name"
+    }
+  ],
   "entityType": "process-binding",
   "processBpmnId": "TravelReviewProcess",
   "domainEntityName": "TravelReview",
@@ -83,6 +97,5 @@
   "pagination": "no",
   "name": "TravelReviewProcess",
   "changelogDate": "20210401000002",
-  "skipFakeData": true,
-  "relationships": []
+  "skipFakeData": true
 }

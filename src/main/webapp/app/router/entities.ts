@@ -36,6 +36,10 @@ const AccommodationDetails = () => import('@/entities/accommodation/accommodatio
 const TravelReviewProcess_TaskCorrectTravelDatesDetails = () => import('@/entities/travel-review-process/task-correct-travel-dates/task-correct-travel-dates-details.vue');
 // prettier-ignore
 const TravelReviewProcess_TaskCorrectTravelDatesExecute = () => import('@/entities/travel-review-process/task-correct-travel-dates/task-correct-travel-dates-execute.vue');
+// prettier-ignore
+const TravelReviewProcess_TaskRegisterBookingDataDetails = () => import('@/entities/travel-review-process/task-register-booking-data/task-register-booking-data-details.vue');
+// prettier-ignore
+const TravelReviewProcess_TaskRegisterBookingDataExecute = () => import('@/entities/travel-review-process/task-register-booking-data/task-register-booking-data-execute.vue');
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 export default [
@@ -151,6 +155,18 @@ export default [
     path: '/process-definition/TravelReviewProcess/task/CorrectTravelDates/:taskInstanceId/execute',
     name: 'TravelReviewProcess_TaskCorrectTravelDatesExecute',
     component: TravelReviewProcess_TaskCorrectTravelDatesExecute,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/process-definition/TravelReviewProcess/task/RegisterBookingData/:taskInstanceId/view',
+    name: 'TravelReviewProcess_TaskRegisterBookingDataDetails',
+    component: TravelReviewProcess_TaskRegisterBookingDataDetails,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/process-definition/TravelReviewProcess/task/RegisterBookingData/:taskInstanceId/execute',
+    name: 'TravelReviewProcess_TaskRegisterBookingDataExecute',
+    component: TravelReviewProcess_TaskRegisterBookingDataExecute,
     meta: { authorities: [Authority.USER] },
   },
   // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here

@@ -1,0 +1,53 @@
+{
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "travelOrigin",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "travelDestination",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "accommodationBookingNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accommodationBookingPrice",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipName": "accommodation",
+      "otherEntityName": "accommodation",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "name"
+    }
+  ],
+  "entityType": "user-task-form",
+  "processBpmnId": "TravelReviewProcess",
+  "processEntityName": "TravelReviewProcess",
+  "taskBpmnId": "RegisterBookingData",
+  "domainEntityName": "TravelReview",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "TaskRegisterBookingData",
+  "changelogDate": "20210401010234"
+}

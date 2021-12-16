@@ -7,8 +7,9 @@ import org.mapstruct.*;
 /**
  * Mapper for the entity {@link TravelReview} and its DTO {@link TravelReviewDTO}.
  */
-@Mapper(componentModel = "spring", uses = { AirlineCompanyMapper.class })
+@Mapper(componentModel = "spring", uses = { AirlineCompanyMapper.class, AccommodationMapper.class })
 public interface TravelReviewMapper extends EntityMapper<TravelReviewDTO, TravelReview> {
     @Mapping(target = "airlineCompany", source = "airlineCompany", qualifiedByName = "name")
+    @Mapping(target = "accommodation", source = "accommodation", qualifiedByName = "name")
     TravelReviewDTO toDto(TravelReview s);
 }
