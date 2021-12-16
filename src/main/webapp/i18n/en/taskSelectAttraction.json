@@ -1,0 +1,29 @@
+{
+  "travelReviewApp": {
+    "taskSelectAttraction": {
+      "home": {
+        "title": "Task Select Attractions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Select Attraction",
+        "createOrEditLabel": "Create or edit a Task Select Attraction",
+        "notFound": "No Task Select Attractions found"
+      },
+      "created": "A new Task Select Attraction is created with identifier {{ param }}",
+      "updated": "A Task Select Attraction is updated with identifier {{ param }}",
+      "deleted": "A Task Select Attraction is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Select Attraction {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Select Attraction"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "travelOrigin": "Travel Origin",
+      "travelDestination": "Travel Destination",
+      "attractionPrice": "Attraction Price",
+      "attraction": "Attraction"
+    }
+  }
+}

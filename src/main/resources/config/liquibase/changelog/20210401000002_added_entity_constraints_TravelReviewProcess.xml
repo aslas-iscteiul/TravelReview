@@ -31,5 +31,11 @@
                                  constraintName="fk_travel_review_process__booking_score_id"
                                  referencedColumnNames="id"
                                  referencedTableName="score"/>
+
+        <addForeignKeyConstraint baseColumnNames="attraction_id"
+                                 baseTableName="travel_review_process"
+                                 constraintName="fk_travel_review_process__attraction_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="attraction"/>
     </changeSet>
 </databaseChangeLog>

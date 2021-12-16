@@ -39,7 +39,8 @@
       "airlineCompany": "Airline Company",
       "accommodation": "Accommodation",
       "flightScore": "Flight Score",
-      "bookingScore": "Booking Score"
+      "bookingScore": "Booking Score",
+      "attraction": "Attraction"
     }
   }
 }

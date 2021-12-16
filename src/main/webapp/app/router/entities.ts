@@ -60,6 +60,10 @@ const Attraction = () => import('@/entities/attraction/attraction.vue');
 const AttractionUpdate = () => import('@/entities/attraction/attraction-update.vue');
 // prettier-ignore
 const AttractionDetails = () => import('@/entities/attraction/attraction-details.vue');
+// prettier-ignore
+const TravelReviewProcess_TaskSelectAttractionDetails = () => import('@/entities/travel-review-process/task-select-attraction/task-select-attraction-details.vue');
+// prettier-ignore
+const TravelReviewProcess_TaskSelectAttractionExecute = () => import('@/entities/travel-review-process/task-select-attraction/task-select-attraction-execute.vue');
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 export default [
@@ -259,6 +263,18 @@ export default [
     path: '/attraction/:attractionId/view',
     name: 'AttractionView',
     component: AttractionDetails,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/process-definition/TravelReviewProcess/task/SelectAttraction/:taskInstanceId/view',
+    name: 'TravelReviewProcess_TaskSelectAttractionDetails',
+    component: TravelReviewProcess_TaskSelectAttractionDetails,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/process-definition/TravelReviewProcess/task/SelectAttraction/:taskInstanceId/execute',
+    name: 'TravelReviewProcess_TaskSelectAttractionExecute',
+    component: TravelReviewProcess_TaskSelectAttractionExecute,
     meta: { authorities: [Authority.USER] },
   },
   // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here

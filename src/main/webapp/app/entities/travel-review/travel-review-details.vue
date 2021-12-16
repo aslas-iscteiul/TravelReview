@@ -154,6 +154,16 @@
               }}</router-link>
             </div>
           </dd>
+          <dt>
+            <span v-text="$t('travelReviewApp.travelReview.attraction')">Attraction</span>
+          </dt>
+          <dd>
+            <div v-if="travelReview.attraction">
+              <router-link :to="{ name: 'AttractionView', params: { attractionId: travelReview.attraction.id } }">{{
+                travelReview.attraction.name
+              }}</router-link>
+            </div>
+          </dd>
         </dl>
         <button type="submit" v-on:click.prevent="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
           <font-awesome-icon icon="arrow-left"></font-awesome-icon>&nbsp;<span v-text="$t('entity.action.back')"> Back</span>
