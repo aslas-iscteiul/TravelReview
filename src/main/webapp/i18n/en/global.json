@@ -24,6 +24,7 @@
         "taskEvaluateFlight": "Task Evaluate Flight",
         "score": "Score",
         "taskEvaluateBookingData": "Task Evaluate Booking Data",
+        "attraction": "Attraction",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

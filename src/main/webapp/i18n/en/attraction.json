@@ -1,0 +1,25 @@
+{
+  "travelReviewApp": {
+    "attraction": {
+      "home": {
+        "title": "Attractions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Attraction",
+        "createOrEditLabel": "Create or edit a Attraction",
+        "notFound": "No Attractions found"
+      },
+      "created": "A new Attraction is created with identifier {{ param }}",
+      "updated": "A Attraction is updated with identifier {{ param }}",
+      "deleted": "A Attraction is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Attraction {{ id }}?"
+      },
+      "detail": {
+        "title": "Attraction"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description"
+    }
+  }
+}
