@@ -286,6 +286,34 @@
               </div>
               <div class="card-body py-0">
                 <div class="form-group">
+                  <label class="form-control-label" v-text="$t('travelReviewApp.travelReviewProcess.userEmail')">userEmail</label>
+                  <input
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="userEmail"
+                    id="travel-review-userEmail"
+                    data-cy="userEmail"
+                    v-model="travelReviewProcess.travelReview.userEmail"
+                  />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
+                  <label class="form-control-label" v-text="$t('travelReviewApp.travelReviewProcess.userName')">userName</label>
+                  <input
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="userName"
+                    id="travel-review-userName"
+                    data-cy="userName"
+                    v-model="travelReviewProcess.travelReview.userName"
+                  />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
                   <label
                     class="form-control-label"
                     v-text="$t('travelReviewApp.travelReviewProcess.airlineCompany')"

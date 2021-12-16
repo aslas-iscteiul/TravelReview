@@ -19,7 +19,9 @@
       },
       "id": "ID",
       "title": "Title",
-      "description": "Description"
+      "description": "Description",
+      "userEmail": "User Email",
+      "userName": "User Name"
     }
   }
 }

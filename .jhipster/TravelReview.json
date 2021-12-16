@@ -71,6 +71,14 @@
     {
       "fieldName": "travelCost",
       "fieldType": "Double"
+    },
+    {
+      "fieldName": "userEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userName",
+      "fieldType": "String"
     }
   ],
   "relationships": [

@@ -12,6 +12,8 @@ const validations: any = {
     travelReview: {
       title: {},
       description: {},
+      userEmail: {},
+      userName: {},
     },
   },
 };

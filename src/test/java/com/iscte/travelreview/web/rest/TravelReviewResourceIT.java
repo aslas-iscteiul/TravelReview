@@ -87,6 +87,12 @@ class TravelReviewResourceIT {
     private static final Double DEFAULT_TRAVEL_COST = 1D;
     private static final Double UPDATED_TRAVEL_COST = 2D;
 
+    private static final String DEFAULT_USER_EMAIL = "AAAAAAAAAA";
+    private static final String UPDATED_USER_EMAIL = "BBBBBBBBBB";
+
+    private static final String DEFAULT_USER_NAME = "AAAAAAAAAA";
+    private static final String UPDATED_USER_NAME = "BBBBBBBBBB";
+
     private static final String ENTITY_API_URL = "/api/travel-reviews";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
 
@@ -132,7 +138,9 @@ class TravelReviewResourceIT {
             .accommodationBookingReview(DEFAULT_ACCOMMODATION_BOOKING_REVIEW)
             .attractionPrice(DEFAULT_ATTRACTION_PRICE)
             .attractionReview(DEFAULT_ATTRACTION_REVIEW)
-            .travelCost(DEFAULT_TRAVEL_COST);
+            .travelCost(DEFAULT_TRAVEL_COST)
+            .userEmail(DEFAULT_USER_EMAIL)
+            .userName(DEFAULT_USER_NAME);
         return travelReview;
     }
 
@@ -161,7 +169,9 @@ class TravelReviewResourceIT {
             .accommodationBookingReview(UPDATED_ACCOMMODATION_BOOKING_REVIEW)
             .attractionPrice(UPDATED_ATTRACTION_PRICE)
             .attractionReview(UPDATED_ATTRACTION_REVIEW)
-            .travelCost(UPDATED_TRAVEL_COST);
+            .travelCost(UPDATED_TRAVEL_COST)
+            .userEmail(UPDATED_USER_EMAIL)
+            .userName(UPDATED_USER_NAME);
         return travelReview;
     }
 
@@ -199,7 +209,9 @@ class TravelReviewResourceIT {
             .andExpect(jsonPath("$.[*].accommodationBookingReview").value(hasItem(DEFAULT_ACCOMMODATION_BOOKING_REVIEW)))
             .andExpect(jsonPath("$.[*].attractionPrice").value(hasItem(DEFAULT_ATTRACTION_PRICE.doubleValue())))
             .andExpect(jsonPath("$.[*].attractionReview").value(hasItem(DEFAULT_ATTRACTION_REVIEW)))
-            .andExpect(jsonPath("$.[*].travelCost").value(hasItem(DEFAULT_TRAVEL_COST.doubleValue())));
+            .andExpect(jsonPath("$.[*].travelCost").value(hasItem(DEFAULT_TRAVEL_COST.doubleValue())))
+            .andExpect(jsonPath("$.[*].userEmail").value(hasItem(DEFAULT_USER_EMAIL)))
+            .andExpect(jsonPath("$.[*].userName").value(hasItem(DEFAULT_USER_NAME)));
     }
 
     @Test
@@ -231,7 +243,9 @@ class TravelReviewResourceIT {
             .andExpect(jsonPath("$.accommodationBookingReview").value(DEFAULT_ACCOMMODATION_BOOKING_REVIEW))
             .andExpect(jsonPath("$.attractionPrice").value(DEFAULT_ATTRACTION_PRICE.doubleValue()))
             .andExpect(jsonPath("$.attractionReview").value(DEFAULT_ATTRACTION_REVIEW))
-            .andExpect(jsonPath("$.travelCost").value(DEFAULT_TRAVEL_COST.doubleValue()));
+            .andExpect(jsonPath("$.travelCost").value(DEFAULT_TRAVEL_COST.doubleValue()))
+            .andExpect(jsonPath("$.userEmail").value(DEFAULT_USER_EMAIL))
+            .andExpect(jsonPath("$.userName").value(DEFAULT_USER_NAME));
     }
 
     @Test

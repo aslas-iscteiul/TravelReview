@@ -36,6 +36,8 @@
       "attractionPrice": "Attraction Price",
       "attractionReview": "Attraction Review",
       "travelCost": "Travel Cost",
+      "userEmail": "User Email",
+      "userName": "User Name",
       "airlineCompany": "Airline Company",
       "accommodation": "Accommodation",
       "flightScore": "Flight Score",

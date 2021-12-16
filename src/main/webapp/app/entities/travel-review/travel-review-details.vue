@@ -115,6 +115,18 @@
             <span>{{ travelReview.travelCost }}</span>
           </dd>
           <dt>
+            <span v-text="$t('travelReviewApp.travelReview.userEmail')">User Email</span>
+          </dt>
+          <dd>
+            <span>{{ travelReview.userEmail }}</span>
+          </dd>
+          <dt>
+            <span v-text="$t('travelReviewApp.travelReview.userName')">User Name</span>
+          </dt>
+          <dd>
+            <span>{{ travelReview.userName }}</span>
+          </dd>
+          <dt>
             <span v-text="$t('travelReviewApp.travelReview.airlineCompany')">Airline Company</span>
           </dt>
           <dd>

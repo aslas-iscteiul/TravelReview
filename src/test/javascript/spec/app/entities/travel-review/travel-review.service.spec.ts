@@ -52,7 +52,9 @@ describe('Service Tests', () => {
         'AAAAAAA',
         0,
         'AAAAAAA',
-        0
+        0,
+        'AAAAAAA',
+        'AAAAAAA'
       );
     });
 
@@ -103,6 +105,8 @@ describe('Service Tests', () => {
             attractionPrice: 1,
             attractionReview: 'BBBBBB',
             travelCost: 1,
+            userEmail: 'BBBBBB',
+            userName: 'BBBBBB',
           },
           elemDefault
         );

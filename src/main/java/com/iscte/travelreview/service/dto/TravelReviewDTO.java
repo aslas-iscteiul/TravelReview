@@ -47,6 +47,10 @@ public class TravelReviewDTO implements Serializable {
 
     private Double travelCost;
 
+    private String userEmail;
+
+    private String userName;
+
     private AirlineCompanyDTO airlineCompany;
 
     private AccommodationDTO accommodation;
@@ -213,6 +217,22 @@ public class TravelReviewDTO implements Serializable {
         this.travelCost = travelCost;
     }
 
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
     public AirlineCompanyDTO getAirlineCompany() {
         return airlineCompany;
     }
@@ -313,6 +333,8 @@ public class TravelReviewDTO implements Serializable {
             ", attractionPrice=" + getAttractionPrice() +
             ", attractionReview='" + getAttractionReview() + "'" +
             ", travelCost=" + getTravelCost() +
+            ", userEmail='" + getUserEmail() + "'" +
+            ", userName='" + getUserName() + "'" +
             ", airlineCompany=" + getAirlineCompany() +
             ", accommodation=" + getAccommodation() +
             ", flightScore=" + getFlightScore() +

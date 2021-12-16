@@ -68,6 +68,12 @@
             <column name="travel_cost" type="double">
                 <constraints nullable="true" />
             </column>
+            <column name="user_email" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="user_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
             <column name="airline_company_id" type="bigint">
                 <constraints nullable="true" />
             </column>

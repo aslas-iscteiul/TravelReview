@@ -54,6 +54,46 @@
                     v-model="$v.travelReviewProcess.travelReview.description.$model"
                   />
                 </div>
+                <div class="form-group">
+                  <label
+                    class="form-control-label"
+                    v-text="$t('travelReviewApp.travelReviewStartForm.userEmail')"
+                    for="travel-review-start-form-userEmail"
+                    >User Email</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="userEmail"
+                    id="travel-review-start-form-userEmail"
+                    data-cy="userEmail"
+                    :class="{
+                      valid: !$v.travelReviewProcess.travelReview.userEmail.$invalid,
+                      invalid: $v.travelReviewProcess.travelReview.userEmail.$invalid,
+                    }"
+                    v-model="$v.travelReviewProcess.travelReview.userEmail.$model"
+                  />
+                </div>
+                <div class="form-group">
+                  <label
+                    class="form-control-label"
+                    v-text="$t('travelReviewApp.travelReviewStartForm.userName')"
+                    for="travel-review-start-form-userName"
+                    >User Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="userName"
+                    id="travel-review-start-form-userName"
+                    data-cy="userName"
+                    :class="{
+                      valid: !$v.travelReviewProcess.travelReview.userName.$invalid,
+                      invalid: $v.travelReviewProcess.travelReview.userName.$invalid,
+                    }"
+                    v-model="$v.travelReviewProcess.travelReview.userName.$model"
+                  />
+                </div>
               </div>
             </template>
           </akip-show-process-definition>

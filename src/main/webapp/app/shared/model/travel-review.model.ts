@@ -23,6 +23,8 @@ export interface ITravelReview {
   attractionPrice?: number | null;
   attractionReview?: string | null;
   travelCost?: number | null;
+  userEmail?: string | null;
+  userName?: string | null;
   airlineCompany?: IAirlineCompany | null;
   accommodation?: IAccommodation | null;
   flightScore?: IScore | null;
@@ -53,6 +55,8 @@ export class TravelReview implements ITravelReview {
     public attractionPrice?: number | null,
     public attractionReview?: string | null,
     public travelCost?: number | null,
+    public userEmail?: string | null,
+    public userName?: string | null,
     public airlineCompany?: IAirlineCompany | null,
     public accommodation?: IAccommodation | null,
     public flightScore?: IScore | null,

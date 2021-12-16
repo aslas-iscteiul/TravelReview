@@ -75,6 +75,12 @@ public class TravelReview implements Serializable {
     @Column(name = "travel_cost")
     private Double travelCost;
 
+    @Column(name = "user_email")
+    private String userEmail;
+
+    @Column(name = "user_name")
+    private String userName;
+
     @ManyToOne
     private AirlineCompany airlineCompany;
 
@@ -344,6 +350,32 @@ public class TravelReview implements Serializable {
         this.travelCost = travelCost;
     }
 
+    public String getUserEmail() {
+        return this.userEmail;
+    }
+
+    public TravelReview userEmail(String userEmail) {
+        this.userEmail = userEmail;
+        return this;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
+    public String getUserName() {
+        return this.userName;
+    }
+
+    public TravelReview userName(String userName) {
+        this.userName = userName;
+        return this;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
     public AirlineCompany getAirlineCompany() {
         return this.airlineCompany;
     }
@@ -477,6 +509,8 @@ public class TravelReview implements Serializable {
             ", attractionPrice=" + getAttractionPrice() +
             ", attractionReview='" + getAttractionReview() + "'" +
             ", travelCost=" + getTravelCost() +
+            ", userEmail='" + getUserEmail() + "'" +
+            ", userName='" + getUserName() + "'" +
             "}";
     }
 }
