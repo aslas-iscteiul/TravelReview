@@ -434,6 +434,36 @@
                   />
                 </div>
               </div>
+              <div class="card-body py-0">
+                <div class="form-group">
+                  <label
+                    class="form-control-label"
+                    v-text="$t('travelReviewApp.travelReviewProcess.attractionScore')"
+                    for="travel-review-process-attractionScore"
+                    >Attraction Score</label
+                  >
+                  <input
+                    v-if="travelReviewProcess.travelReview.attractionScore"
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="attractionScore"
+                    id="travel-review-attractionScore"
+                    data-cy="attractionScore"
+                    :value="travelReviewProcess.travelReview.attractionScore.description"
+                  />
+                  <input
+                    v-else
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="attractionScore"
+                    id="travel-review-attractionScore"
+                    data-cy="attractionScore"
+                    value=""
+                  />
+                </div>
+              </div>
             </div>
           </template>
         </akip-show-process-instance>

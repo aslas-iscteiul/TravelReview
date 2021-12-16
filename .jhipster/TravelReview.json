@@ -103,6 +103,12 @@
       "otherEntityName": "attraction",
       "relationshipType": "many-to-one",
       "otherEntityField": "name"
+    },
+    {
+      "relationshipName": "attractionScore",
+      "otherEntityName": "score",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "description"
     }
   ],
   "entityType": "domain",

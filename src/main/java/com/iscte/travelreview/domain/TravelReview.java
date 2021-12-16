@@ -90,6 +90,9 @@ public class TravelReview implements Serializable {
     @ManyToOne
     private Attraction attraction;
 
+    @ManyToOne
+    private Score attractionScore;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
         return id;
@@ -401,6 +404,19 @@ public class TravelReview implements Serializable {
 
     public void setAttraction(Attraction attraction) {
         this.attraction = attraction;
+    }
+
+    public Score getAttractionScore() {
+        return this.attractionScore;
+    }
+
+    public TravelReview attractionScore(Score score) {
+        this.setAttractionScore(score);
+        return this;
+    }
+
+    public void setAttractionScore(Score score) {
+        this.attractionScore = score;
     }
 
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here

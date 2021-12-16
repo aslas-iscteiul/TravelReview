@@ -28,6 +28,7 @@ export interface ITravelReview {
   flightScore?: IScore | null;
   bookingScore?: IScore | null;
   attraction?: IAttraction | null;
+  attractionScore?: IScore | null;
 }
 
 export class TravelReview implements ITravelReview {
@@ -55,7 +56,8 @@ export class TravelReview implements ITravelReview {
     public accommodation?: IAccommodation | null,
     public flightScore?: IScore | null,
     public bookingScore?: IScore | null,
-    public attraction?: IAttraction | null
+    public attraction?: IAttraction | null,
+    public attractionScore?: IScore | null
   ) {
     this.travelWithFlight = this.travelWithFlight ?? false;
   }

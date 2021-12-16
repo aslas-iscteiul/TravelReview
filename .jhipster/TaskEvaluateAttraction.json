@@ -1,0 +1,49 @@
+{
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "travelOrigin",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "travelDestination",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "attractionReview",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipName": "attractionScore",
+      "otherEntityName": "score",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "description"
+    }
+  ],
+  "entityType": "user-task-form",
+  "processBpmnId": "TravelReviewProcess",
+  "processEntityName": "TravelReviewProcess",
+  "taskBpmnId": "EvaluateAttraction",
+  "domainEntityName": "TravelReview",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "TaskEvaluateAttraction",
+  "changelogDate": "20210401111144"
+}

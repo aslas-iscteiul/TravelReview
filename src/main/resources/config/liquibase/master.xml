@@ -29,6 +29,7 @@
     <include file="config/liquibase/changelog/20210431334444_added_entity_TaskEvaluateBookingData.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20211199090003_added_entity_Attraction.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210401765234_added_entity_TaskSelectAttraction.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210401111144_added_entity_TaskEvaluateAttraction.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20210401000001_added_entity_constraints_TravelReview.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210401000002_added_entity_constraints_TravelReviewProcess.xml" relativeToChangelogFile="false"/>
@@ -37,6 +38,7 @@
     <include file="config/liquibase/changelog/20210401884444_added_entity_constraints_TaskEvaluateFlight.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210431334444_added_entity_constraints_TaskEvaluateBookingData.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210401765234_added_entity_constraints_TaskSelectAttraction.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210401111144_added_entity_constraints_TaskEvaluateAttraction.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

@@ -1,0 +1,29 @@
+{
+  "travelReviewApp": {
+    "taskEvaluateAttraction": {
+      "home": {
+        "title": "Task Evaluate Attractions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Evaluate Attraction",
+        "createOrEditLabel": "Create or edit a Task Evaluate Attraction",
+        "notFound": "No Task Evaluate Attractions found"
+      },
+      "created": "A new Task Evaluate Attraction is created with identifier {{ param }}",
+      "updated": "A Task Evaluate Attraction is updated with identifier {{ param }}",
+      "deleted": "A Task Evaluate Attraction is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Evaluate Attraction {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Evaluate Attraction"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "travelOrigin": "Travel Origin",
+      "travelDestination": "Travel Destination",
+      "attractionReview": "Attraction Review",
+      "attractionScore": "Attraction Score"
+    }
+  }
+}

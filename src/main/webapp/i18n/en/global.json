@@ -26,6 +26,7 @@
         "taskEvaluateBookingData": "Task Evaluate Booking Data",
         "attraction": "Attraction",
         "taskSelectAttraction": "Task Select Attraction",
+        "taskEvaluateAttraction": "Task Evaluate Attraction",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
