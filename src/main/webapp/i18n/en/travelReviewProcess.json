@@ -38,7 +38,8 @@
       "travelCost": "Travel Cost",
       "airlineCompany": "Airline Company",
       "accommodation": "Accommodation",
-      "flightScore": "Flight Score"
+      "flightScore": "Flight Score",
+      "bookingScore": "Booking Score"
     }
   }
 }

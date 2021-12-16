@@ -12,5 +12,6 @@ public interface TravelReviewMapper extends EntityMapper<TravelReviewDTO, Travel
     @Mapping(target = "airlineCompany", source = "airlineCompany", qualifiedByName = "name")
     @Mapping(target = "accommodation", source = "accommodation", qualifiedByName = "name")
     @Mapping(target = "flightScore", source = "flightScore", qualifiedByName = "description")
+    @Mapping(target = "bookingScore", source = "bookingScore", qualifiedByName = "description")
     TravelReviewDTO toDto(TravelReview s);
 }

@@ -91,6 +91,12 @@
       "otherEntityName": "score",
       "relationshipType": "many-to-one",
       "otherEntityField": "description"
+    },
+    {
+      "relationshipName": "bookingScore",
+      "otherEntityName": "score",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "description"
     }
   ],
   "entityType": "process-binding",

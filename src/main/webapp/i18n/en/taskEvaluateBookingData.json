@@ -1,0 +1,30 @@
+{
+  "travelReviewApp": {
+    "taskEvaluateBookingData": {
+      "home": {
+        "title": "Task Evaluate Booking Data",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Evaluate Booking Data",
+        "createOrEditLabel": "Create or edit a Task Evaluate Booking Data",
+        "notFound": "No Task Evaluate Booking Data found"
+      },
+      "created": "A new Task Evaluate Booking Data is created with identifier {{ param }}",
+      "updated": "A Task Evaluate Booking Data is updated with identifier {{ param }}",
+      "deleted": "A Task Evaluate Booking Data is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Evaluate Booking Data {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Evaluate Booking Data"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "travelOrigin": "Travel Origin",
+      "travelDestination": "Travel Destination",
+      "accommodationBookingNumber": "Accommodation Booking Number",
+      "accommodationBookingReview": "Accommodation Booking Review",
+      "bookingScore": "Booking Score"
+    }
+  }
+}

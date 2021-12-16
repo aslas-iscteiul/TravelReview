@@ -25,6 +25,7 @@ export interface ITravelReview {
   airlineCompany?: IAirlineCompany | null;
   accommodation?: IAccommodation | null;
   flightScore?: IScore | null;
+  bookingScore?: IScore | null;
 }
 
 export class TravelReview implements ITravelReview {
@@ -50,7 +51,8 @@ export class TravelReview implements ITravelReview {
     public travelCost?: number | null,
     public airlineCompany?: IAirlineCompany | null,
     public accommodation?: IAccommodation | null,
-    public flightScore?: IScore | null
+    public flightScore?: IScore | null,
+    public bookingScore?: IScore | null
   ) {
     this.travelWithFlight = this.travelWithFlight ?? false;
   }

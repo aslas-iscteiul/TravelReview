@@ -50,6 +50,10 @@ const Score = () => import('@/entities/score/score.vue');
 const ScoreUpdate = () => import('@/entities/score/score-update.vue');
 // prettier-ignore
 const ScoreDetails = () => import('@/entities/score/score-details.vue');
+// prettier-ignore
+const TravelReviewProcess_TaskEvaluateBookingDataDetails = () => import('@/entities/travel-review-process/task-evaluate-booking-data/task-evaluate-booking-data-details.vue');
+// prettier-ignore
+const TravelReviewProcess_TaskEvaluateBookingDataExecute = () => import('@/entities/travel-review-process/task-evaluate-booking-data/task-evaluate-booking-data-execute.vue');
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 export default [
@@ -213,6 +217,18 @@ export default [
     path: '/score/:scoreId/view',
     name: 'ScoreView',
     component: ScoreDetails,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/process-definition/TravelReviewProcess/task/EvaluateBookingData/:taskInstanceId/view',
+    name: 'TravelReviewProcess_TaskEvaluateBookingDataDetails',
+    component: TravelReviewProcess_TaskEvaluateBookingDataDetails,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/process-definition/TravelReviewProcess/task/EvaluateBookingData/:taskInstanceId/execute',
+    name: 'TravelReviewProcess_TaskEvaluateBookingDataExecute',
+    component: TravelReviewProcess_TaskEvaluateBookingDataExecute,
     meta: { authorities: [Authority.USER] },
   },
   // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here
