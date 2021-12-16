@@ -33,7 +33,8 @@
       "flightScore": "Flight Score",
       "bookingScore": "Booking Score",
       "attraction": "Attraction",
-      "attractionScore": "Attraction Score"
+      "attractionScore": "Attraction Score",
+      "travelScore": "Travel Score"
     }
   }
 }

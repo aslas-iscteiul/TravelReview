@@ -59,6 +59,8 @@ public class TravelReviewDTO implements Serializable {
 
     private ScoreDTO attractionScore;
 
+    private ScoreDTO travelScore;
+
     public Long getId() {
         return id;
     }
@@ -259,6 +261,14 @@ public class TravelReviewDTO implements Serializable {
         this.attractionScore = attractionScore;
     }
 
+    public ScoreDTO getTravelScore() {
+        return travelScore;
+    }
+
+    public void setTravelScore(ScoreDTO travelScore) {
+        this.travelScore = travelScore;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -309,6 +319,7 @@ public class TravelReviewDTO implements Serializable {
             ", bookingScore=" + getBookingScore() +
             ", attraction=" + getAttraction() +
             ", attractionScore=" + getAttractionScore() +
+            ", travelScore=" + getTravelScore() +
             "}";
     }
 }

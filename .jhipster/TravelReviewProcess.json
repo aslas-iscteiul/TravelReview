@@ -109,6 +109,12 @@
       "otherEntityName": "score",
       "relationshipType": "many-to-one",
       "otherEntityField": "description"
+    },
+    {
+      "relationshipName": "travelScore",
+      "otherEntityName": "score",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "description"
     }
   ],
   "entityType": "process-binding",

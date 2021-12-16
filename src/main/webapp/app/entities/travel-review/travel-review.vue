@@ -48,6 +48,7 @@
             <th scope="row"><span v-text="$t('travelReviewApp.travelReview.bookingScore')">Booking Score</span></th>
             <th scope="row"><span v-text="$t('travelReviewApp.travelReview.attraction')">Attraction</span></th>
             <th scope="row"><span v-text="$t('travelReviewApp.travelReview.attractionScore')">Attraction Score</span></th>
+            <th scope="row"><span v-text="$t('travelReviewApp.travelReview.travelScore')">Travel Score</span></th>
             <th scope="row"></th>
           </tr>
         </thead>
@@ -115,6 +116,13 @@
               <div v-if="travelReview.attractionScore">
                 <router-link :to="{ name: 'ScoreView', params: { scoreId: travelReview.attractionScore.id } }">{{
                   travelReview.attractionScore.description
+                }}</router-link>
+              </div>
+            </td>
+            <td>
+              <div v-if="travelReview.travelScore">
+                <router-link :to="{ name: 'ScoreView', params: { scoreId: travelReview.travelScore.id } }">{{
+                  travelReview.travelScore.description
                 }}</router-link>
               </div>
             </td>
