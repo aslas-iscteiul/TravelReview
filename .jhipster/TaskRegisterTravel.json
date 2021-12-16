@@ -1,0 +1,48 @@
+{
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "travelOrigin",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "travelDestination",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "travelWithFlight",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "travelStartDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "travelEndDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "TravelReviewProcess",
+  "processEntityName": "TravelReviewProcess",
+  "taskBpmnId": "RegisterTravel",
+  "domainEntityName": "TravelReview",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "TaskRegisterTravel",
+  "changelogDate": "20210401000004"
+}

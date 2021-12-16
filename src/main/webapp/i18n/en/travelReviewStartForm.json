@@ -1,0 +1,25 @@
+{
+  "travelReviewApp": {
+    "travelReviewStartForm": {
+      "home": {
+        "title": "Travel Review Start Forms",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Travel Review Start Form",
+        "createOrEditLabel": "Create or edit a Travel Review Start Form",
+        "notFound": "No Travel Review Start Forms found"
+      },
+      "created": "A new Travel Review Start Form is created with identifier {{ param }}",
+      "updated": "A Travel Review Start Form is updated with identifier {{ param }}",
+      "deleted": "A Travel Review Start Form is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Travel Review Start Form {{ id }}?"
+      },
+      "detail": {
+        "title": "Travel Review Start Form"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description"
+    }
+  }
+}

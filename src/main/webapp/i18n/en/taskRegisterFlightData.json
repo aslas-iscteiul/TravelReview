@@ -1,0 +1,32 @@
+{
+  "travelReviewApp": {
+    "taskRegisterFlightData": {
+      "home": {
+        "title": "Task Register Flight Data",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Register Flight Data",
+        "createOrEditLabel": "Create or edit a Task Register Flight Data",
+        "notFound": "No Task Register Flight Data found"
+      },
+      "created": "A new Task Register Flight Data is created with identifier {{ param }}",
+      "updated": "A Task Register Flight Data is updated with identifier {{ param }}",
+      "deleted": "A Task Register Flight Data is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Register Flight Data {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Register Flight Data"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "travelOrigin": "Travel Origin",
+      "travelDestination": "Travel Destination",
+      "flightTicketNumber": "Flight Ticket Number",
+      "flightClass": "Flight Class",
+      "flightDuration": "Flight Duration",
+      "flightPrice": "Flight Price",
+      "airlineCompany": "Airline Company"
+    }
+  }
+}

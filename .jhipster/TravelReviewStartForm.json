@@ -1,0 +1,25 @@
+{
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "start-form",
+  "processBpmnId": "TravelReviewProcess",
+  "processEntityName": "TravelReviewProcess",
+  "domainEntityName": "TravelReview",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "TravelReviewStartForm",
+  "changelogDate": "20210401000002",
+  "skipFakeData": true
+}
