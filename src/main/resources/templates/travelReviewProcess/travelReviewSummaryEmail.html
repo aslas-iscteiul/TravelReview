@@ -6,18 +6,19 @@
 </head>
 <body>
 <p>Dear <span th:text="${travelReview.userName}">userName</span></p>
-<p>Here is a summary of your travel <b th:text="${travelReview.title}">travelName</b></p>
+<p>Here is a summary of your travel review <b th:text="${travelReview.title}">travelName</b></p>
 <ul>
   <li><b>Start</b>: <span th:text="${travelReview.travelStartDate }"></span></li>
   <li><b>End</b>: <span th:text="${travelReview.travelEndDate }"></span></li>
   <li><b>Origin</b>: <span th:text="${travelReview.travelOrigin }"></span></li>
-  <li><b>Destination</b>: <span th:text="${travelReview.travelDestination }"></span></li>
+  <li><b>Destination</b>: <span th:text="${travelReview.travelDestination}"></span></li>
+  <li><b>Score</b>: <span th:text="${travelReview.travelScore}"></span></li>
   <li><b>Cost</b>: <span th:text="${travelReview.travelCost}"></span></li>
 </ul>
 <p>
   Regards,
   <br />
-  <em>AgileKip Team</em>
+  <em>AgileKip Team for Travel Review</em>
 </p>
 </body>
 </html>

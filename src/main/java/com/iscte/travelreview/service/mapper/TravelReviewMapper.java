@@ -14,10 +14,9 @@ import org.mapstruct.*;
 public interface TravelReviewMapper extends EntityMapper<TravelReviewDTO, TravelReview> {
     @Mapping(target = "airlineCompany", source = "airlineCompany", qualifiedByName = "name")
     @Mapping(target = "accommodation", source = "accommodation", qualifiedByName = "name")
-    @Mapping(target = "flightScore", source = "flightScore", qualifiedByName = "description")
-    @Mapping(target = "bookingScore", source = "bookingScore", qualifiedByName = "description")
+    @Mapping(target = "flightScore", source = "flightScore", qualifiedByName = "number")
+    @Mapping(target = "bookingScore", source = "bookingScore", qualifiedByName = "number")
     @Mapping(target = "attraction", source = "attraction", qualifiedByName = "name")
-    @Mapping(target = "attractionScore", source = "attractionScore", qualifiedByName = "description")
-    @Mapping(target = "travelScore", source = "travelScore", qualifiedByName = "description")
+    @Mapping(target = "attractionScore", source = "attractionScore", qualifiedByName = "number")
     TravelReviewDTO toDto(TravelReview s);
 }

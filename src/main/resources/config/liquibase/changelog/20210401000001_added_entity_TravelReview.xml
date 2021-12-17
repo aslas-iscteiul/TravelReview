@@ -74,6 +74,9 @@
             <column name="user_name" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
+            <column name="travel_score" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
             <column name="airline_company_id" type="bigint">
                 <constraints nullable="true" />
             </column>
@@ -90,9 +93,6 @@
                 <constraints nullable="true" />
             </column>
             <column name="attraction_score_id" type="bigint">
-                <constraints nullable="true" />
-            </column>
-            <column name="travel_score_id" type="bigint">
                 <constraints nullable="true" />
             </column>
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->

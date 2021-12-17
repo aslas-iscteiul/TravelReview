@@ -127,6 +127,12 @@
             <span>{{ travelReview.userName }}</span>
           </dd>
           <dt>
+            <span v-text="$t('travelReviewApp.travelReview.travelScore')">Travel Score</span>
+          </dt>
+          <dd>
+            <span>{{ travelReview.travelScore }}</span>
+          </dd>
+          <dt>
             <span v-text="$t('travelReviewApp.travelReview.airlineCompany')">Airline Company</span>
           </dt>
           <dd>
@@ -152,7 +158,7 @@
           <dd>
             <div v-if="travelReview.flightScore">
               <router-link :to="{ name: 'ScoreView', params: { scoreId: travelReview.flightScore.id } }">{{
-                travelReview.flightScore.description
+                travelReview.flightScore.number
               }}</router-link>
             </div>
           </dd>
@@ -162,7 +168,7 @@
           <dd>
             <div v-if="travelReview.bookingScore">
               <router-link :to="{ name: 'ScoreView', params: { scoreId: travelReview.bookingScore.id } }">{{
-                travelReview.bookingScore.description
+                travelReview.bookingScore.number
               }}</router-link>
             </div>
           </dd>
@@ -182,17 +188,7 @@
           <dd>
             <div v-if="travelReview.attractionScore">
               <router-link :to="{ name: 'ScoreView', params: { scoreId: travelReview.attractionScore.id } }">{{
-                travelReview.attractionScore.description
-              }}</router-link>
-            </div>
-          </dd>
-          <dt>
-            <span v-text="$t('travelReviewApp.travelReview.travelScore')">Travel Score</span>
-          </dt>
-          <dd>
-            <div v-if="travelReview.travelScore">
-              <router-link :to="{ name: 'ScoreView', params: { scoreId: travelReview.travelScore.id } }">{{
-                travelReview.travelScore.description
+                travelReview.attractionScore.number
               }}</router-link>
             </div>
           </dd>

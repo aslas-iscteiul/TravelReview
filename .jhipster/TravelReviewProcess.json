@@ -79,6 +79,10 @@
     {
       "fieldName": "userName",
       "fieldType": "String"
+    },
+    {
+      "fieldName": "travelScore",
+      "fieldType": "String"
     }
   ],
   "relationships": [
@@ -98,13 +102,13 @@
       "relationshipName": "flightScore",
       "otherEntityName": "score",
       "relationshipType": "many-to-one",
-      "otherEntityField": "description"
+      "otherEntityField": "number"
     },
     {
       "relationshipName": "bookingScore",
       "otherEntityName": "score",
       "relationshipType": "many-to-one",
-      "otherEntityField": "description"
+      "otherEntityField": "number"
     },
     {
       "relationshipName": "attraction",
@@ -116,13 +120,7 @@
       "relationshipName": "attractionScore",
       "otherEntityName": "score",
       "relationshipType": "many-to-one",
-      "otherEntityField": "description"
-    },
-    {
-      "relationshipName": "travelScore",
-      "otherEntityName": "score",
-      "relationshipType": "many-to-one",
-      "otherEntityField": "description"
+      "otherEntityField": "number"
     }
   ],
   "entityType": "process-binding",

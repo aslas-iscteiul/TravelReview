@@ -35,7 +35,7 @@
       "relationshipName": "bookingScore",
       "otherEntityName": "score",
       "relationshipType": "many-to-one",
-      "otherEntityField": "description"
+      "otherEntityField": "number"
     }
   ],
   "entityType": "user-task-form",

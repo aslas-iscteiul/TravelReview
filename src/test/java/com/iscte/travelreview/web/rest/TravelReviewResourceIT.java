@@ -93,6 +93,9 @@ class TravelReviewResourceIT {
     private static final String DEFAULT_USER_NAME = "AAAAAAAAAA";
     private static final String UPDATED_USER_NAME = "BBBBBBBBBB";
 
+    private static final String DEFAULT_TRAVEL_SCORE = "AAAAAAAAAA";
+    private static final String UPDATED_TRAVEL_SCORE = "BBBBBBBBBB";
+
     private static final String ENTITY_API_URL = "/api/travel-reviews";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
 
@@ -140,7 +143,8 @@ class TravelReviewResourceIT {
             .attractionReview(DEFAULT_ATTRACTION_REVIEW)
             .travelCost(DEFAULT_TRAVEL_COST)
             .userEmail(DEFAULT_USER_EMAIL)
-            .userName(DEFAULT_USER_NAME);
+            .userName(DEFAULT_USER_NAME)
+            .travelScore(DEFAULT_TRAVEL_SCORE);
         return travelReview;
     }
 
@@ -171,7 +175,8 @@ class TravelReviewResourceIT {
             .attractionReview(UPDATED_ATTRACTION_REVIEW)
             .travelCost(UPDATED_TRAVEL_COST)
             .userEmail(UPDATED_USER_EMAIL)
-            .userName(UPDATED_USER_NAME);
+            .userName(UPDATED_USER_NAME)
+            .travelScore(UPDATED_TRAVEL_SCORE);
         return travelReview;
     }
 
@@ -211,7 +216,8 @@ class TravelReviewResourceIT {
             .andExpect(jsonPath("$.[*].attractionReview").value(hasItem(DEFAULT_ATTRACTION_REVIEW)))
             .andExpect(jsonPath("$.[*].travelCost").value(hasItem(DEFAULT_TRAVEL_COST.doubleValue())))
             .andExpect(jsonPath("$.[*].userEmail").value(hasItem(DEFAULT_USER_EMAIL)))
-            .andExpect(jsonPath("$.[*].userName").value(hasItem(DEFAULT_USER_NAME)));
+            .andExpect(jsonPath("$.[*].userName").value(hasItem(DEFAULT_USER_NAME)))
+            .andExpect(jsonPath("$.[*].travelScore").value(hasItem(DEFAULT_TRAVEL_SCORE)));
     }
 
     @Test
@@ -245,7 +251,8 @@ class TravelReviewResourceIT {
             .andExpect(jsonPath("$.attractionReview").value(DEFAULT_ATTRACTION_REVIEW))
             .andExpect(jsonPath("$.travelCost").value(DEFAULT_TRAVEL_COST.doubleValue()))
             .andExpect(jsonPath("$.userEmail").value(DEFAULT_USER_EMAIL))
-            .andExpect(jsonPath("$.userName").value(DEFAULT_USER_NAME));
+            .andExpect(jsonPath("$.userName").value(DEFAULT_USER_NAME))
+            .andExpect(jsonPath("$.travelScore").value(DEFAULT_TRAVEL_SCORE));
     }
 
     @Test

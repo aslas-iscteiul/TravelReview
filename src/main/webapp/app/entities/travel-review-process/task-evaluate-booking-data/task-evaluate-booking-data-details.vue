@@ -101,7 +101,7 @@
                 name="bookingScore"
                 id="travel-review-bookingScore"
                 data-cy="bookingScore"
-                :value="taskContext.travelReviewProcess.travelReview.bookingScore.description"
+                :value="taskContext.travelReviewProcess.travelReview.bookingScore.number"
               />
               <input
                 v-else

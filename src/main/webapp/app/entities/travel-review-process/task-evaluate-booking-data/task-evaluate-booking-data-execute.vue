@@ -158,7 +158,7 @@
                   v-for="scoreOption in scores"
                   :key="scoreOption.id"
                 >
-                  {{ scoreOption.description }}
+                  {{ scoreOption.number }}
                 </option>
               </select>
             </div>

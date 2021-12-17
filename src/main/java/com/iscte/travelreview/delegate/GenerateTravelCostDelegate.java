@@ -33,6 +33,7 @@ public class GenerateTravelCostDelegate implements JavaDelegate {
 
         double travelCost = flightPrice+bookingPrice+attractionPrice;
 
+        delegateExecution.setVariable("travelCost", travelCost);
         travelPlanProcess.getTravelReview().setTravelCost(travelCost);
     }
 }

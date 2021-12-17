@@ -9,9 +9,9 @@ import org.mapstruct.*;
  */
 @Mapper(componentModel = "spring", uses = {})
 public interface ScoreMapper extends EntityMapper<ScoreDTO, Score> {
-    @Named("description")
+    @Named("number")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
-    @Mapping(target = "description", source = "description")
-    ScoreDTO toDtoDescription(Score score);
+    @Mapping(target = "number", source = "number")
+    ScoreDTO toDtoNumber(Score score);
 }

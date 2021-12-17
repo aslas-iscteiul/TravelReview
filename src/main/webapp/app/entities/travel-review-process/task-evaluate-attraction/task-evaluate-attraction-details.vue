@@ -87,7 +87,7 @@
                 name="attractionScore"
                 id="travel-review-attractionScore"
                 data-cy="attractionScore"
-                :value="taskContext.travelReviewProcess.travelReview.attractionScore.description"
+                :value="taskContext.travelReviewProcess.travelReview.attractionScore.number"
               />
               <input
                 v-else

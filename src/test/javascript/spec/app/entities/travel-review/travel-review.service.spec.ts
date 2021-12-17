@@ -54,6 +54,7 @@ describe('Service Tests', () => {
         'AAAAAAA',
         0,
         'AAAAAAA',
+        'AAAAAAA',
         'AAAAAAA'
       );
     });
@@ -107,6 +108,7 @@ describe('Service Tests', () => {
             travelCost: 1,
             userEmail: 'BBBBBB',
             userName: 'BBBBBB',
+            travelScore: 'BBBBBB',
           },
           elemDefault
         );

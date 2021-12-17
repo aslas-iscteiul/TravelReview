@@ -314,6 +314,20 @@
               </div>
               <div class="card-body py-0">
                 <div class="form-group">
+                  <label class="form-control-label" v-text="$t('travelReviewApp.travelReviewProcess.travelScore')">travelScore</label>
+                  <input
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="travelScore"
+                    id="travel-review-travelScore"
+                    data-cy="travelScore"
+                    v-model="travelReviewProcess.travelReview.travelScore"
+                  />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
                   <label
                     class="form-control-label"
                     v-text="$t('travelReviewApp.travelReviewProcess.airlineCompany')"
@@ -388,7 +402,7 @@
                     name="flightScore"
                     id="travel-review-flightScore"
                     data-cy="flightScore"
-                    :value="travelReviewProcess.travelReview.flightScore.description"
+                    :value="travelReviewProcess.travelReview.flightScore.number"
                   />
                   <input
                     v-else
@@ -418,7 +432,7 @@
                     name="bookingScore"
                     id="travel-review-bookingScore"
                     data-cy="bookingScore"
-                    :value="travelReviewProcess.travelReview.bookingScore.description"
+                    :value="travelReviewProcess.travelReview.bookingScore.number"
                   />
                   <input
                     v-else
@@ -478,7 +492,7 @@
                     name="attractionScore"
                     id="travel-review-attractionScore"
                     data-cy="attractionScore"
-                    :value="travelReviewProcess.travelReview.attractionScore.description"
+                    :value="travelReviewProcess.travelReview.attractionScore.number"
                   />
                   <input
                     v-else
@@ -488,36 +502,6 @@
                     name="attractionScore"
                     id="travel-review-attractionScore"
                     data-cy="attractionScore"
-                    value=""
-                  />
-                </div>
-              </div>
-              <div class="card-body py-0">
-                <div class="form-group">
-                  <label
-                    class="form-control-label"
-                    v-text="$t('travelReviewApp.travelReviewProcess.travelScore')"
-                    for="travel-review-process-travelScore"
-                    >Travel Score</label
-                  >
-                  <input
-                    v-if="travelReviewProcess.travelReview.travelScore"
-                    readonly
-                    type="text"
-                    class="form-control"
-                    name="travelScore"
-                    id="travel-review-travelScore"
-                    data-cy="travelScore"
-                    :value="travelReviewProcess.travelReview.travelScore.description"
-                  />
-                  <input
-                    v-else
-                    readonly
-                    type="text"
-                    class="form-control"
-                    name="travelScore"
-                    id="travel-review-travelScore"
-                    data-cy="travelScore"
                     value=""
                   />
                 </div>

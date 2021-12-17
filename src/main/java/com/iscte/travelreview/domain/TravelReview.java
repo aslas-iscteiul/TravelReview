@@ -81,6 +81,9 @@ public class TravelReview implements Serializable {
     @Column(name = "user_name")
     private String userName;
 
+    @Column(name = "travel_score")
+    private String travelScore;
+
     @ManyToOne
     private AirlineCompany airlineCompany;
 
@@ -98,9 +101,6 @@ public class TravelReview implements Serializable {
 
     @ManyToOne
     private Score attractionScore;
-
-    @ManyToOne
-    private Score travelScore;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
@@ -376,6 +376,19 @@ public class TravelReview implements Serializable {
         this.userName = userName;
     }
 
+    public String getTravelScore() {
+        return this.travelScore;
+    }
+
+    public TravelReview travelScore(String travelScore) {
+        this.travelScore = travelScore;
+        return this;
+    }
+
+    public void setTravelScore(String travelScore) {
+        this.travelScore = travelScore;
+    }
+
     public AirlineCompany getAirlineCompany() {
         return this.airlineCompany;
     }
@@ -454,19 +467,6 @@ public class TravelReview implements Serializable {
         this.attractionScore = score;
     }
 
-    public Score getTravelScore() {
-        return this.travelScore;
-    }
-
-    public TravelReview travelScore(Score score) {
-        this.setTravelScore(score);
-        return this;
-    }
-
-    public void setTravelScore(Score score) {
-        this.travelScore = score;
-    }
-
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 
     @Override
@@ -511,6 +511,7 @@ public class TravelReview implements Serializable {
             ", travelCost=" + getTravelCost() +
             ", userEmail='" + getUserEmail() + "'" +
             ", userName='" + getUserName() + "'" +
+            ", travelScore='" + getTravelScore() + "'" +
             "}";
     }
 }

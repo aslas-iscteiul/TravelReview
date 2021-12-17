@@ -30,13 +30,13 @@
       "travelCost": "Travel Cost",
       "userEmail": "User Email",
       "userName": "User Name",
+      "travelScore": "Travel Score",
       "airlineCompany": "Airline Company",
       "accommodation": "Accommodation",
       "flightScore": "Flight Score",
       "bookingScore": "Booking Score",
       "attraction": "Attraction",
-      "attractionScore": "Attraction Score",
-      "travelScore": "Travel Score"
+      "attractionScore": "Attraction Score"
     }
   }
 }

@@ -99,7 +99,7 @@
                 name="flightScore"
                 id="travel-review-flightScore"
                 data-cy="flightScore"
-                :value="taskContext.travelReviewProcess.travelReview.flightScore.description"
+                :value="taskContext.travelReviewProcess.travelReview.flightScore.number"
               />
               <input
                 v-else

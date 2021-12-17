@@ -25,13 +25,13 @@ export interface ITravelReview {
   travelCost?: number | null;
   userEmail?: string | null;
   userName?: string | null;
+  travelScore?: string | null;
   airlineCompany?: IAirlineCompany | null;
   accommodation?: IAccommodation | null;
   flightScore?: IScore | null;
   bookingScore?: IScore | null;
   attraction?: IAttraction | null;
   attractionScore?: IScore | null;
-  travelScore?: IScore | null;
 }
 
 export class TravelReview implements ITravelReview {
@@ -57,13 +57,13 @@ export class TravelReview implements ITravelReview {
     public travelCost?: number | null,
     public userEmail?: string | null,
     public userName?: string | null,
+    public travelScore?: string | null,
     public airlineCompany?: IAirlineCompany | null,
     public accommodation?: IAccommodation | null,
     public flightScore?: IScore | null,
     public bookingScore?: IScore | null,
     public attraction?: IAttraction | null,
-    public attractionScore?: IScore | null,
-    public travelScore?: IScore | null
+    public attractionScore?: IScore | null
   ) {
     this.travelWithFlight = this.travelWithFlight ?? false;
   }

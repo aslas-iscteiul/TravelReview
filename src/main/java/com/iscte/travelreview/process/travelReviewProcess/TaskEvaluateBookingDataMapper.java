@@ -29,6 +29,6 @@ public interface TaskEvaluateBookingDataMapper {
 
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
-    @Mapping(target = "description", source = "description")
-    ScoreDTO toScoreDTO(Score description);
+    @Mapping(target = "number", source = "number")
+    ScoreDTO toScoreDTO(Score number);
 }
